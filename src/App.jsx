@@ -1,11 +1,15 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1 className='text-5xl font-bold flex'>Holaaaaaaaa</h1>
+      <Routes>
+        <Route path='/' element={<Nav />}></Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
