@@ -10,9 +10,10 @@ export default {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      xxl: '1440px',
     },
     fontFamily: {
-      press: ['Press Start 2P'],
+      press: ['Press Start 2P', 'sans-serif'],
     },
     extend: {
       colors: {
