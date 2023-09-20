@@ -1,15 +1,15 @@
 import React from 'react';
-import Nav from '../components/NavBar';
-import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import About from '../components/Home/About';
 
 const Home = () => {
   return (
     <div className='no-scroll-x'>
-      <div>
-        <Nav />
+      <div className='no-scroll-x'>
+        <NavBar />
       </div>
       <div>
-        <Footer />
+        <About />
       </div>
     </div>
   );
