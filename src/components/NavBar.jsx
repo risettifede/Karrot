@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className='lg:absolute lg:top-0 xl:absolute xl:top-0 w-full z-50 relative shadow-lg'>
+    <nav className='hidden md:hidden lg:block lg:absolute lg:top-0 xl:absolute xl:top-0 w-full z-50 relative shadow-lg'>
       <div className='bg-white h-14 md:h-20 lg:h-24 xl:h-32 xl:w-screen flex justify-between'>
         <div className='hidden lg:ml-6 lg:flex lg:w-full lg:items-center xl:ml-8 xl:flex xl:w-full xl:items-center space-x-12 mx-4'>
           <div className='text-white my-4'>

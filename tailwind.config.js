@@ -14,6 +14,7 @@ export default {
     },
     fontFamily: {
       press: ['Press Start 2P', 'sans-serif'],
+      mont: ['Montserrat', 'sans-serif'],
     },
     extend: {
       colors: {

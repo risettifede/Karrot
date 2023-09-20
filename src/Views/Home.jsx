@@ -1,14 +1,14 @@
 import NavBar from '../components/NavBar';
-import About from '../components/Home/About';
+import Main from '../components/Home/Main';
 
 const Home = () => {
   return (
-    <div className='no-scroll-x'>
-      <div className='no-scroll-x'>
+    <div className='bg-pink no-scroll-x'>
+      <div className='h-[100px] md:h-[500px] xl:h-[920px] my-1 md:my-2 xl:my-5 flex justify-center items-end'>
         <NavBar />
       </div>
       <div>
-        <About />
+        <Main />
       </div>
     </div>
   );
