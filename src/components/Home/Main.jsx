@@ -2,31 +2,29 @@ import Logo from '../../assets/Logo.png';
 
 const Main = () => {
   return (
-    <div className='relative bg-pink justify-center font-press h-[900px] md:h-[700px] lg:h-[1500px] xl:h-[750px] xxl:h-[900px]'>
-      <h1 className='text-center'>
-        <div className='absolute text-violet text-center text-4xl ml-[125px] mt-[40px] md:ml-[250px] md:mt-[-400px] md:text-6xl '>
-          KARROT
-        </div>{' '}
-        <br />
-        <div className='absolute text-xl text-white text-center ml-[70px] mt-[70px] mb-[50px] md:ml-[145px] md:mt-[-350px] md:mb-[10px] md:text-4xl'>
-          GAME ECONOMY DESIGN{' '}
-        </div>
-      </h1>
-      <div>
-        <p className='absolute text-white text-center font-mont p-[30px] mt-[150px] md:p-[90px] md:text-2xl md:mt-[-250px]'>
-          Welcome to Karrot, where we use our expertise in gaming and finance to
-          help games and web 3 projects create sustainable and profitable
-          virtual economies through our comprehensive tokenomics design
-          services.
-        </p>
+    <div className='w-screen h-[800px] md:h-[900px] lg:h-[1500px] xl:h-[750px] xxl:h-[900px] grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center'>
+      <div className='text-center'>
+        <h1 className='text-violet text-4xl md:text-6xl md:-mt-96'>KARROT</h1>
+        <h2 className='text-xl mt-4 -mb-48 text-white md:text-4xl md:p-6 md:mt-2 md:mb-'>
+          GAME ECONOMY DESIGN
+        </h2>
       </div>
-      <div className='absolute text-center ml-[134px] mt-[400px] md:ml-[280px] md:mt-[80px]  '>
-        <button className='bg-bubble text-center text-white text-lg px-4 py-2 md:text-xl md:px-8 md:py-3'>
-          LET'S TALK
+      <p className=' text-white text-center font-mont p-16  mt-12 md:text-2xl md:-mt-80'>
+        Welcome to Karrot, where we use our expertise in gaming and finance to
+        help games and web 3 projects create sustainable and profitable virtual
+        economies through our comprehensive tokenomics design services.
+      </p>
+      <div className='space-y-8 text-center mb-32 -mt-4 md:mb-[200px] md:-mt-12 '>
+        <button className='bg-bubble text-center text-white text-lg px-4 py-2 mb-12 md:text-xl md:px-8 md:py-3'>
+          LETS TALK
         </button>
-      </div>
-      <div className='scale-90 mt-[500px] ml-[100px] mr-[100px] md:mt-[210px] md:ml-[230px]'>
-        <img className='md:h-60 my-36 mr-8' src={Logo} alt='Conejo de Karrot' />
+        <div>
+          <img
+            className='h-40 md:h-60 md:mt-28 '
+            src={Logo}
+            alt='Conejo de Karrot'
+          />
+        </div>
       </div>
     </div>
   );

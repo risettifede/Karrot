@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className='hidden md:hidden lg:block lg:absolute lg:top-0 xl:absolute xl:top-0 w-full z-50 relative shadow-lg'>
       <div className='bg-white h-14 md:h-20 lg:h-24 xl:h-32 xl:w-screen flex justify-between'>
@@ -36,7 +43,7 @@ const Nav = () => {
           <div className='relative'>
             <Link to='/'>
               <button className='cursor-pointer border-none bg-bubble lg:text-white lg:ml-[400px] xl:text-white xl:ml-[550px] xxl:text-white xxl:ml-[700px] transition-colors duration-300 ease-in-out border px-4 py-2 rounded-md xl:text-xl'>
-                Let's talk
+                LETS TALK
               </button>
             </Link>
           </div>
