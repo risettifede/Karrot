@@ -41,6 +41,7 @@ export default {
         md: '16px',
         lg: '18px',
         xl: '20px',
+        xxl: '60px',
         h1: '48px',
         h2: '36px',
         h3: '24px',
