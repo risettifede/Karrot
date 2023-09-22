@@ -3,7 +3,7 @@ import Logo from '../../assets/Logo.png';
 const Main = () => {
   return (
     <div
-      className='w-screen 
+      className='w-screen no-scroll-x
     h-[844px] 
     md:h-[1000px] 
     lg:h-[1366px] xl:h-[610px] xxl:h-[600px] grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center'
