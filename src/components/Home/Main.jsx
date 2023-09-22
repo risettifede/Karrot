@@ -2,7 +2,12 @@ import Logo from '../../assets/Logo.png';
 
 const Main = () => {
   return (
-    <div className='w-screen h-[844px] md:h-[1000px] lg:h-[1366px] xl:h-[610px] xxl:h-[600px] grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center'>
+    <div
+      className='w-screen 
+    h-[844px] 
+    md:h-[1000px] 
+    lg:h-[1366px] xl:h-[610px] xxl:h-[600px] grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center'
+    >
       <div className='text-center'>
         <h1 className='text-violet text-4xl mt-5 md:text-6xl lg:text-7xl lg:mt-28 xl:text-8xl xl:mt-8 xxl:text-8xl xxl:mt-12'>
           KARROT
