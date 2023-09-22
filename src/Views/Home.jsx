@@ -4,7 +4,7 @@ import Main from '../components/Home/Main';
 const Home = () => {
   return (
     <div className='bg-pink no-scroll-x'>
-      <div className='h-[100px] md:h-[768px] xl:h-[920px] my-1 md:-my-36 xl:my-5 flex justify-center items-end'>
+      <div className='w-screen h-[70px] md:h-[400px] lg:h-[400px] my-1 md:-my-36 flex justify-center items-end'>
         <NavBar />
       </div>
       <div>
