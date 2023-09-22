@@ -52,11 +52,11 @@ const About = () => {
         md:h-[10px] md:ml-[110px] md:-mt-[500px] 
         lg:ml-[170px] lg:-mt-[700px] 
         xl:ml-[290px] xl:-mt-[200px]
-        xxl:ml-[390px] xxl:-mt-[350px] 
+        xxl:ml-[390px] xxl:-mt-[390px] 
         '
       >
         <img
-          className='h-32 ml-28 md:h-60 lg:h-[330px] xl'
+          className='h-32 ml-28 md:h-60 lg:h-[330px]'
           src={Nintendo}
           alt='Consola nintendo'
         />

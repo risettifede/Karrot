@@ -1,13 +1,6 @@
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
 
 const Nav = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <nav className='relative w-screen shadow-lg hidden md:hidden lg:block lg:absolute lg:top-0 xl:absolute xl:top-0 z-50'>
       <div className='bg-white h-14 md:h-20 lg:h-24 xl:h-24 xl:w-screen flex justify-between'>
