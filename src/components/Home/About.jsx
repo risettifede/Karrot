@@ -4,12 +4,12 @@ import Nintendo from '../../assets/nintendo.png';
 const About = () => {
   return (
     <div
-      className='w-screen 
-      h-[800px] 
-      md:h-[1000px] 
-      lg:h-[1366px] 
-      xl:h-[610px] 
-      xxl:h-[600px] font-mont'
+      className='w-screen font-mont
+      h-[730px] 
+      md:h-[890px] 
+      lg:h-[1210px] 
+      xl:h-[990px] 
+      xxl:h-[1000px] '
     >
       <div className='text-center'>
         <h1
@@ -17,7 +17,7 @@ const About = () => {
         md:text-3xl
         lg:text-4xl
         xl:text-5xl
-        xxl:text-6xl'
+        xxl:text-5xl xxl:-mt-48'
         >
           ABOUT
         </h1>
@@ -29,7 +29,7 @@ const About = () => {
                   md:w-[670px] md:h-[330px] md:text-2xl md:-mt-[510px]
                   lg:w-[830px] lg:h-[400px] lg:text-3xl lg:-mt-[700px]
                   xl:w-[1100px] xl:h-[320px] xl:text-4xl xl:-mt-[200px]
-                  xxl:w-[1100px]'
+                  xxl:w-[1100px] xxl:-mt-[300px]'
         >
           OUR VISION
           <div
@@ -49,10 +49,14 @@ const About = () => {
       </div>
       <div
         className='h-[10px] -mt-[397px] 
-        md:h-[10px] md:ml-[60px] md:-mt-[500px]'
+        md:h-[10px] md:ml-[110px] md:-mt-[500px] 
+        lg:ml-[170px] lg:-mt-[700px] 
+        xl:ml-[290px] xl:-mt-[200px]
+        xxl:ml-[390px] xxl:-mt-[350px] 
+        '
       >
         <img
-          className='h-32 ml-28 md:h-80'
+          className='h-32 ml-28 md:h-60 lg:h-[330px] xl'
           src={Nintendo}
           alt='Consola nintendo'
         />
