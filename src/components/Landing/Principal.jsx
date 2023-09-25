@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div className='w-screen h-screen grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center p-5'>
       {/* Header */}
-      <header className='text-center space-y-4 md:mt-10 lg:mt-20 xl:mt-10'>
+      <header className='text-center space-y-4 md:mt-10 lg:mt-20 xl:mt-20'>
         <h1 className='text-violet text-4xl mt-16 md:text-4xl md:mt-6 lg:text-7xl xl:text-7xl xxl:text-7xl'>
           KARROT
         </h1>
@@ -15,7 +15,7 @@ const Main = () => {
 
       {/* Main Content */}
       <main className='text-white text-center text-lg font-mont space-y-2 p-4'>
-        <p className='md:text-xl lg:text-4xl xl:text-2xl xxl:text-3xl xxl:mt-6'>
+        <p className='md:text-xl lg:text-3xl xl:text-2xl xxl:text-3xl xxl:mt-6'>
           Welcome to Karrot, where we use our expertise in gaming and finance to
           help games and web 3 projects create sustainable and profitable
           virtual economies through our comprehensive tokenomics design

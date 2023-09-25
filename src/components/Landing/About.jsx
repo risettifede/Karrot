@@ -9,11 +9,16 @@ const About = () => {
       </h1>
 
       {/* Main content */}
-      <div className='grid place-items-center bg-celeste rounded-xl shadow-2xl p-6 w-3/4 h-2/ mx-auto z-10'>
+      <div
+        className='grid place-items-center bg-celeste rounded-xl shadow-2xl p-6 w-3/4 mx-auto z-10 
+      xxxxs:h-[700px] 
+      xxxs:h-screen
+      '
+      >
         <h2 className='text-xl mx-auto md:text-2xl lg:text-3xl xl:text-4xl text-white'>
           OUR VISION
         </h2>
-        <div className='bg-yellow-100 -mt-[600px]'>
+        <div className='bg-red-100 -mt-[600px] '>
           <p className='text-center text-lg p-2 mx-auto md:text-lg lg:text-xl xl:text-2xl text-white'>
             Karrot’s vision is to revolutionize the gaming and web 3 industry by
             designing sustainable and profitable virtual economies. We aim to

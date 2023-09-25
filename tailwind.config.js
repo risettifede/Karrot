@@ -62,7 +62,8 @@ export default {
         bold: 700,
         dark: 900,
       },
-      plugins: [],
+      plugins: [
+      ],
     }
   }
 }
