@@ -1,19 +1,24 @@
 import NavBar from '../components/NavBar';
-import Main from '../components/Home/Main';
-import About from '../components/Home/About';
+import Main from '../components/Landing/Main';
+import About from '../components/Landing/About';
 
 const Home = () => {
   return (
-    <div className=''>
-      <div className='w-screen h-[30px] md:h-[400px] lg:h-[400px] xxl:h-[38px] my-1 md:-my-36 flex justify-center items-end'>
+    <div className='grid grid-rows-[auto,1fr,auto] h-screen w-full'>
+      {/* NavBar section */}
+      <header className='w-full'>
         <NavBar />
-      </div>
-      <div className='w-screen h-screen'>
+      </header>
+
+      {/* Main content section */}
+      <main className='w-full h-full overflow-y-auto'>
         <Main />
-      </div>
-      <div>
+      </main>
+
+      {/* About section */}
+      <section className='w-full'>
         <About />
-      </div>
+      </section>
     </div>
   );
 };

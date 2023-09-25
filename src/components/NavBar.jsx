@@ -2,44 +2,24 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className='relative w-screen shadow-lg hidden md:hidden lg:block lg:absolute lg:top-0'>
-      <div className='bg-white h-14 md:h-20 lg:h-24 xl:h-24 xl:w-screen flex justify-between'>
-        <div className='hidden space-x-14 mx-4 lg:ml-6 lg:flex lg:w-full lg:items-center xl:ml-8 xl:flex xl:w-full xl:items-center'>
-          <div className='text-pink my-4'>
-            <Link to='/'>
-              <span className='cursor-pointer ml-8 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:border-yellowbook xl:text-xl xl:ml-20'>
-                ABOUT
-              </span>
-            </Link>
-          </div>
-          <div className='text-pink my-4'>
+    <nav className='w-screen shadow-lg hidden lg:block absolute top-0 bg-white'>
+      <div className='grid grid-cols-[repeat(5,1fr),auto] h-24 gap-8 items-center px-10 xl:px-8'>
+        {['ABOUT', 'SERVICES', 'TEAM', 'CLIENTS'].map((item, index) => (
+          <div key={index} className='text-pink'>
             <Link to='/'>
               <span className='cursor-pointer border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:border-yellowbook xl:text-xl'>
-                SERVICES
+                {item}
               </span>
             </Link>
           </div>
-          <div className='text-pink my-4'>
-            <Link to='/'>
-              <span className='cursor-pointer border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:border-yellowbook xl:text-xl'>
-                TEAM
-              </span>
-            </Link>
-          </div>
-          <div className='text-pink my-4'>
-            <Link to='/'>
-              <span className='cursor-pointer border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:border-yellowbook xl:text-xl'>
-                CLIENTS
-              </span>
-            </Link>
-          </div>
-          <div className='relative'>
-            <Link to='/'>
-              <button className='cursor-pointer border-none bg-bubble shadow-xl lg:text-white lg:ml-[400px] xl:text-white xl:ml-[490px] xxl:text-white xxl:ml-[650px] transition-colors duration-300 ease-in-out border px-4 py-2 rounded-md xl:text-md xl:hover:scale-105 lg:transition-transform xl:duration-300'>
-                LETS TALK
-              </button>
-            </Link>
-          </div>
+        ))}
+
+        <div>
+          <Link to='/'>
+            <button className='cursor-pointer border-none bg-bubble shadow-xl text-white duration-300 ease-in-out border px-4 py-2 rounded-md xl:text-md hover:scale-105 transition-transform xl:duration-300'>
+              LETS TALK
+            </button>
+          </Link>
         </div>
       </div>
     </nav>
