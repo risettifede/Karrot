@@ -1,6 +1,6 @@
 import NavBar from '../components/NavBar';
 import About from '../components/Landing/About';
-import { Principal } from '../components/Landing/Principal';
+import Main from '../components/Landing/Principal';
 
 const Home = () => {
   return (
@@ -11,8 +11,8 @@ const Home = () => {
       </header>
 
       {/* Main content section */}
-      <main className='w-full h-full overflow-y-auto'>
-        <Principal />
+      <main className='w-full h-full'>
+        <Main />
       </main>
 
       {/* About section */}
