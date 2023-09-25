@@ -1,6 +1,6 @@
 import Logo from '../../assets/Logo.png';
 
-export const Main = () => {
+const Principal = () => {
   return (
     <div className='w-screen h-screen grid grid-rows-[auto,1fr,auto] bg-pink font-press items-center justify-items-center p-5'>
       {/* Header */}
@@ -37,3 +37,5 @@ export const Main = () => {
     </div>
   );
 };
+
+export default Principal;

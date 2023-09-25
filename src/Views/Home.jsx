@@ -1,6 +1,6 @@
 import NavBar from '../components/NavBar';
-import Main from '../components/Landing/Main';
 import About from '../components/Landing/About';
+import { Principal } from '../components/Landing/Principal';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
 
       {/* Main content section */}
       <main className='w-full h-full overflow-y-auto'>
-        <Main />
+        <Principal />
       </main>
 
       {/* About section */}
