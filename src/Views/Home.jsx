@@ -4,8 +4,8 @@ import About from '../components/Home/About';
 
 const Home = () => {
   return (
-    <div className='no-scroll-x no-scroll-y'>
-      <div className='w-screen h-[70px] md:h-[400px] lg:h-[400px] my-1 md:-my-36 flex justify-center items-end'>
+    <div className=''>
+      <div className='w-screen h-[30px] md:h-[400px] lg:h-[400px] xxl:h-[38px] my-1 md:-my-36 flex justify-center items-end'>
         <NavBar />
       </div>
       <div className='w-screen h-screen'>

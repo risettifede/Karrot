@@ -8,7 +8,7 @@ const Main = () => {
     md:h-[1000px] 
     lg:h-[1366px] 
     xl:h-[610px] 
-    xxl:h-[690px] '
+    xxl:h-[1000px] '
     >
       <div className='text-center'>
         <h1
@@ -52,7 +52,7 @@ const Main = () => {
         lg:px-12 lg:py-4 lg:text-3xl 
         xl:hidden xxl:hidden'
         >
-          LET'S TALK
+          LET’S TALK
         </button>
         <img
           className='h-40 md:h-60 md:mt-28 lg:h-80 lg:mt-96 xl:h-28 xl:mr-[999px] xxl:mr-[1200px] xxl:h-32'

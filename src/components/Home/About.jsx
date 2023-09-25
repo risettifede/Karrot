@@ -1,4 +1,3 @@
-import React from 'react';
 import Nintendo from '../../assets/nintendo.png';
 
 const About = () => {
@@ -48,7 +47,7 @@ const About = () => {
         </div>
       </div>
       <div
-        className='h-[10px] -mt-[397px] 
+        className='relative text-center justify-centerh-[10px] -mt-[397px] 
         md:h-[10px] md:ml-[110px] md:-mt-[500px] 
         lg:ml-[170px] lg:-mt-[700px] 
         xl:ml-[290px] xl:-mt-[200px]
