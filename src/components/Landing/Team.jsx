@@ -8,12 +8,12 @@ const founders = [
     imageUrl: photo,
   },
   {
-    name: 'Federico Risetti',
+    name: 'Jeremías Coppola',
     role: 'Co-founder',
     imageUrl: photo,
   },
   {
-    name: 'Federico Risetti',
+    name: 'German Cappelletti',
     role: 'Co-founder',
     imageUrl: photo,
   },
@@ -30,14 +30,14 @@ export default function Team() {
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 align-center gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 align-center gap-12'>
           {founders.map((person) => (
             <div
               key={person.name}
-              className='card bg-gray-100 p-4 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center'
+              className='card bg-gray-100 p-12 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center'
             >
               <img
-                className='h-40 w-40 mb-4 rounded-full object-cover transform -translate-y-8'
+                className='h-40 w-40 mb-4 rounded-full object-cover transform translate-y-1'
                 src={person.imageUrl}
                 alt={person.name}
               />
@@ -45,15 +45,15 @@ export default function Team() {
                 <h3 className='text-xl font-semibold leading-7 tracking-tight text-gray-900'>
                   {person.name}
                 </h3>
-                <p className='text-md font-semibold leading-6 text-indigo-600'>
+                <p className='text-md font-semibold leading-6 text-violet'>
                   {person.role}
                 </p>
                 <div className='flex mt-2 space-x-4'>
                   <a href='#' target='_blank' rel='noopener noreferrer'>
-                    <FaLinkedin className='text-indigo-600 hover:text-indigo-800' />
+                    <FaLinkedin className='text-bubble hover:text-violet transition ease-in-out duration-300' />
                   </a>
                   <a href='#' target='_blank' rel='noopener noreferrer'>
-                    <FaTwitter className='text-indigo-600 hover:text-indigo-800' />
+                    <FaTwitter className='text-bubble hover:text-violet transition ease-in-out duration-300' />
                   </a>
                 </div>
               </div>
