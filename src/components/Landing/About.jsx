@@ -1,4 +1,4 @@
-import Nintendo from '../../assets/nintendo.png';
+import Nintendo from '../../assets/Resources/nintendo.png';
 
 const About = () => {
   return (

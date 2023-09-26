@@ -1,4 +1,4 @@
-import photo from '../../assets/photo.png';
+import photo from '../../assets/Resources/photo.png';
 
 const callouts = [
   {
