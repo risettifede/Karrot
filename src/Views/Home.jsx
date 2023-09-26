@@ -4,6 +4,7 @@ import Main from '../components/Landing/Principal';
 import Form from '../components/Landing/Form';
 import Team from '../components/Landing/Team';
 import Clients from '../components/Landing/Clients';
+import Services from '../components/Landing/Services';
 
 const Home = () => {
   return (
@@ -21,6 +22,11 @@ const Home = () => {
       {/* About section */}
       <section className='w-screen'>
         <About />
+      </section>
+
+      {/* Services section */}
+      <section className='w-screen'>
+        <Services />
       </section>
 
       {/* Team section */}
