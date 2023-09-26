@@ -24,7 +24,7 @@ export default function Team() {
     <div className='flex flex-wrap bg-pink py-24 sm:py-32'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='max-w-2xl mb-12'>
-          <h2 className='text-3xl font-bold tracking-tight text-bluebook sm:text-4xl text-center mt-8'>
+          <h2 className='text-3xl font-bold tracking-tight sm:text-4xl text-center bg-slate-400 justify-center mt-8'>
             Team
           </h2>
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
@@ -48,7 +48,7 @@ export default function Team() {
                 <p className='text-md font-semibold leading-6 text-violet'>
                   {person.role}
                 </p>
-                <div className='flex mt-2 space-x-4'>
+                <div className='flex mt-2 space-x-4 justify-center'>
                   <a href='#' target='_blank' rel='noopener noreferrer'>
                     <FaLinkedin className='text-bubble hover:text-violet transition ease-in-out duration-300' />
                   </a>
