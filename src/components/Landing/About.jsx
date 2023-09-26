@@ -2,10 +2,10 @@ import Nintendo from '../../assets/Resources/nintendo.png';
 
 const About = () => {
   return (
-    <div className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2 font-mont'>
+    <div className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2'>
       {/* Header - About */}
-      <h1 className='text-center self-center text-3xl mx-auto mt-4 md:text-4xl lg:text-5xl xl:text-6xl'>
-        ABOUT
+      <h1 className='text-center uppercase self-center text-2xl mx-auto mt-4 md:text-4xl lg:text-5xl xl:text-6xl'>
+        About
       </h1>
 
       {/* Main content */}
@@ -33,7 +33,7 @@ const About = () => {
 
       {/* Image Container */}
       <img
-        className='absolute h-16 mt-[416px] ml-[145px]
+        className='absolute h-[100px] mt-[416px] ml-[120px]
         xxxs:mt-[400px] xxxs:ml-[140px] xxxs:h-20
         xxs:mt-[400px] xxs:ml-[140px] xxs:h-20
         xs:mt-[400px] xs:ml-[145px] xs:h-20

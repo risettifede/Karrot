@@ -28,10 +28,10 @@ const callouts = [
 
 const Clients = () => {
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-300 -mt-20'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32'>
-          <h2 className='text-2xl font-bold text-gray-900 text-center -mt-5'>
+          <h2 className='text-2xl font-bold text-gray-900 text-center mb-20'>
             Our Clients
           </h2>
 
