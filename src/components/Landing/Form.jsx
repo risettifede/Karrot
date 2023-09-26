@@ -1,6 +1,6 @@
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 
-export const Form = () => {
+const Form = () => {
   return (
     <form>
       <div className='w-screen bg-red-400 space-y-12'>
@@ -293,3 +293,5 @@ export const Form = () => {
     </form>
   );
 };
+
+export default Form;

@@ -1,9 +1,10 @@
+import photo from '../../assets/photo.png';
+
 const callouts = [
   {
     name: 'Desk and Office',
     description: 'Work from home accessories',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+    imageSrc: photo,
     imageAlt:
       'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
     href: '#',
@@ -27,7 +28,7 @@ const callouts = [
   },
 ];
 
-export const Clients = () => {
+const Clients = () => {
   return (
     <div className='bg-gray-100'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -61,3 +62,5 @@ export const Clients = () => {
     </div>
   );
 };
+
+export default Clients;
