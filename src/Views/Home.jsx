@@ -5,6 +5,7 @@ import Form from '../components/Landing/Form';
 import Team from '../components/Landing/Team';
 import Clients from '../components/Landing/Clients';
 import Services from '../components/Landing/Services';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -42,6 +43,11 @@ const Home = () => {
       {/* Form section */}
       <section className='w-screen'>
         <Form />
+      </section>
+
+      {/* Footer section */}
+      <section className='w-screen'>
+        <Footer />
       </section>
     </div>
   );

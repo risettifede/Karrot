@@ -79,7 +79,7 @@ const Form = () => {
           <div className='mt-6 flex items-center justify-end gap-x-6 mx-auto'>
             <button
               type='submit'
-              className='rounded-md mx-auto bg-bubble py-2 px-6 text-sm uppercase font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+              className='rounded-md mx-auto bg-bubble py-2 px-6 text-sm uppercase font-semibold text-white shadow-sm hover:bg-bubble focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
             >
               Submit
             </button>

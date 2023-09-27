@@ -38,7 +38,7 @@ const Clients = () => {
           <div className='mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
             {callouts.map((callout) => (
               <div key={callout.name} className='group relative text-center'>
-                <div className='relative h-80 w-full overflow-hidden rounded-lg transition duration-300 bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64'>
+                <div className='relative h-48 w-full overflow-hidden rounded-lg transition duration-300 bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64'>
                   <img
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
