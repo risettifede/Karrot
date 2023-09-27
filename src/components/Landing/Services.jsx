@@ -3,7 +3,7 @@ const Services = () => {
     <div className='bg-white py-24 sm:py-32'>
       <div className='mx-auto max-w-7xl px-10 lg:px-8'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-          <div className='rounded-xl bg-pink py-10 text-center ring-2 ring-inset ring-gray-900/5 shadow-xl'>
+          <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
               <p className='font-bold text-xl mx-auto'>DISCOVERY AND SCOPING</p>
               <p className='mt-6 text-[13px] leading-5'>
@@ -16,7 +16,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className='rounded-xl bg-pink py-10 text-center ring-2 ring-inset ring-gray-900/5 shadow-xl'>
+          <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
               <p className='font-bold text-xl mx-auto'>MATH</p>
               <p className='mt-6 text-[13px] leading-5'>
@@ -28,7 +28,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className='rounded-xl bg-pink py-10 text-center ring-2 ring-inset ring-gray-900/5 shadow-xl'>
+          <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
               <p className='font-bold  text-xl mx-auto'>DIFFICULTY</p>
               <p className='mt-6 text-[13px] leading-5'>
@@ -40,7 +40,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className='rounded-xl bg-pink py-10 text-center ring-2 ring-inset ring-gray-900/5 shadow-xl'>
+          <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
               <p className='font-bold text-xl mx-auto'>BALANCING</p>
               <p className='mt-6 text-[13px] leading-5 '>
