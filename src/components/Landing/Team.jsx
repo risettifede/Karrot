@@ -1,4 +1,4 @@
-import photo from '../../assets/Resources/photo.png';
+// import photo from '../../assets/Resources/photo.png';
 import German from '../../assets/Photos/GermanCapelletti.png';
 import Jeremias from '../../assets/Photos/JeremiasCoppola.png';
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
@@ -13,11 +13,6 @@ const founders = [
     name: 'Germán Capelletti',
     role: 'Co-founder',
     imageUrl: German,
-  },
-  {
-    name: 'German Cappelletti',
-    role: 'Co-founder',
-    imageUrl: photo,
   },
 ];
 
@@ -36,10 +31,10 @@ export default function Team() {
           {founders.map((person) => (
             <div
               key={person.name}
-              className='card bg-white p-12 rounded-xl shadow-2xl ring-1 ring-inset ring-gray-100 hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center'
+              className='card bg-white p-12 rounded-xl shadow-lg ring-1 ring-inset ring-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center'
             >
               <img
-                className='h-40 w-40 mb-4 rounded-full object-cover transform translate-y-1'
+                className='h-32 w-32 mb-4 rounded-full object-cover transform translate-y-1'
                 src={person.imageUrl}
                 alt={person.name}
               />
@@ -47,15 +42,19 @@ export default function Team() {
                 <h3 className='text-xl font-semibold leading-7 tracking-tight text-gray-900'>
                   {person.name}
                 </h3>
-                <p className='text-md font-semibold leading-6 text-violet'>
-                  {person.role}
-                </p>
-                <div className='flex mt-2 space-x-4 justify-center'>
+                <p className='text-md font-bold leading-6'>{person.role}</p>
+                <div className='flex mt-2 space-x-2 justify-center'>
                   <a href='#' target='_blank' rel='noopener noreferrer'>
-                    <FaLinkedin className='text-bubble hover:text-violet transition ease-in-out duration-300' />
+                    <FaLinkedin
+                      size={20}
+                      className='text-bubble hover:text-violet transition ease-in-out duration-300'
+                    />
                   </a>
                   <a href='#' target='_blank' rel='noopener noreferrer'>
-                    <FaTwitter className='text-bubble hover:text-violet transition ease-in-out duration-300' />
+                    <FaTwitter
+                      size={20}
+                      className='text-bubble hover:text-violet transition ease-in-out duration-300'
+                    />
                   </a>
                 </div>
               </div>

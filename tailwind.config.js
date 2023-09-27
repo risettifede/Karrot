@@ -26,7 +26,7 @@ export default {
     },
     extend: {
       colors: {
-        pink: '#FCC4B6',
+        pink: '#FCC4B7',
         bubble: '#FC887B',
         celeste: '#97ADD3',
         white: '#FFFFFF',
