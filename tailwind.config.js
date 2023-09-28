@@ -21,10 +21,11 @@ export default {
       xxxxl: '1440px',
     },
     fontFamily: {
-      press: ['Press Start 2P', 'arial'],
       mont: ['Montserrat', 'sans-serif'],
+      press: ['Press Start 2P', 'arial'],
     },
     extend: {
+      scrollBehavior: ['smooth'],
       colors: {
         pink: '#FCC4B7',
         bubble: '#FC887B',

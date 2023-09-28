@@ -1,5 +1,5 @@
 // // import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
-import Logo from '../../assets/Icons/Logo.png';
+// import Logo from '../../assets/Icons/Logo.png';
 
 // const Form = () => {
 //   return (
@@ -96,14 +96,14 @@ import Logo from '../../assets/Icons/Logo.png';
 const Form = () => {
   return (
     <>
-      <div className='p-6'>
-        <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-12 mx-auto'>
+      <div id='formulario' className='p-8 -mt-20'>
+        <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-10 mx-auto'>
           <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
-            <img
+            {/* <img
               className='mx-auto h-20 w-auto'
               src={Logo}
               alt='Your Company'
-            />
+            /> */}
             <h2 className='mt-10 uppercase text-center text-2xl font-bold leading-9 tracking-tight text-white'>
               Contact us
             </h2>
@@ -125,7 +125,7 @@ const Form = () => {
                     type='name'
                     autoComplete='name'
                     required
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray sm:text-sm sm:leading-6'
                   />
                 </div>
               </div>
@@ -146,7 +146,7 @@ const Form = () => {
                     type='Email'
                     autoComplete='Email'
                     required
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
                 </div>
               </div>
@@ -166,7 +166,7 @@ const Form = () => {
                     type='Subjet'
                     autoComplete='Subjet'
                     required
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
                 </div>
               </div>
@@ -187,7 +187,7 @@ const Form = () => {
                     required
                     maxLength='1000'
                     // placeholder='Escribe tu consulta aquí...'
-                    className='block font-mont w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block font-mont w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6'
                   />
                 </div>
               </div>
@@ -195,7 +195,7 @@ const Form = () => {
               <div className='flex justify-center mt-6'>
                 <button
                   type='submit'
-                  className='uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  className='uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 '
                 >
                   Submit
                 </button>

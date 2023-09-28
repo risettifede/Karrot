@@ -16,9 +16,12 @@ const NavBar = () => {
 
         <div className='font-press'>
           <Link>
-            <button className='cursor-pointer border-none bg-bubble shadow-xl text-white duration-300 ease-in-out border px-4 py-2 rounded-md lg:px-2 xl:text-md hover:scale-105 transition-transform xl:duration-300'>
+            <a
+              href='#formulario'
+              className='cursor-pointer border-none bg-bubble shadow-xl text-white duration-300 ease-in-out border px-4 py-3.5 rounded-md lg:px-2 xl:text-sm hover:scale-105 transition-transform xl:duration-300'
+            >
               LETS TALK
-            </button>
+            </a>
           </Link>
         </div>
       </div>
