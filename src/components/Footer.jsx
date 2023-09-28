@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='bg-white text-black py-6 px-4'>
+    <footer className='bg-white text-black py-6 px-4 md:py-12'>
       <div className='max-w-7xl mx-auto'>
         <div className='flex flex-wrap justify-center space-x-4 md:justify-between'>
           <div className='mb-4 md:mb-0'>
@@ -16,7 +16,8 @@ const Footer = () => {
           </div>
 
           <div className='text-xs mb-4 md:mb-0'>
-            KARROT © 2023 | Todos los derechos reservados
+            <span className=''>KARROT © 2023</span> | Todos los derechos
+            reservados
           </div>
 
           <div className='space-x-4'>

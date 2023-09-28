@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav className='w-screen shadow-lg hidden lg:block absolute top-0 bg-white'>
+    <nav className='w-screen shadow-lg hidden lg:block absolute top-0 bg-white z-30'>
       <div className='grid grid-cols-[repeat(5,1fr),auto] h-24 gap-8 items-center px-10 xl:px-8'>
         {['ABOUT', 'SERVICES', 'TEAM', 'CLIENTS'].map((item, index) => (
           <div key={index} className='text-pink'>

@@ -1,6 +1,8 @@
 // import photo from '../../assets/Resources/photo.png';
-import German from '../../assets/Photos/GermanCapelletti.png';
 import Jeremias from '../../assets/Photos/JeremiasCoppola.png';
+import German from '../../assets/Photos/GermanCapelletti.png';
+import Tomas from '../../assets/Photos/TomasFuld.png';
+import Thomas from '../../assets/Photos/ThomasBransburg.png';
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const founders = [
@@ -13,6 +15,16 @@ const founders = [
     name: 'Germán Capelletti',
     role: 'Co-founder',
     imageUrl: German,
+  },
+  {
+    name: 'Thomas Bransburg',
+    role: 'Co-founder',
+    imageUrl: Thomas,
+  },
+  {
+    name: 'Tomás Fuld',
+    role: 'Co-founder',
+    imageUrl: Tomas,
   },
 ];
 
@@ -27,7 +39,7 @@ export default function Team() {
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 align-center gap-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 align-center gap-12'>
           {founders.map((person) => (
             <div
               key={person.name}

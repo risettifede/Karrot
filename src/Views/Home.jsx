@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className='grid grid-rows-[auto,1fr,auto] h-screen w-screen'>
       {/* NavBar section */}
-      <header className='w-full'>
+      <header className='w-screen'>
         <NavBar />
       </header>
 

@@ -93,25 +93,11 @@ import Logo from '../../assets/Icons/Logo.png';
 
 // export default Form;
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 const Form = () => {
   return (
     <>
       <div className='p-6'>
-        <div className='flex bg-pink rounded-xl min-h-full flex-1 flex-col justify-center px-6 py-12 mx-auto'>
+        <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-12 mx-auto'>
           <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
             <img
               className='mx-auto h-20 w-auto'

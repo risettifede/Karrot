@@ -1,26 +1,26 @@
 const callouts = [
   {
-    name: 'Videogames',
+    name: 'Supermario',
     description: 'Work was done on the economic flow of the video game',
     imageSrc:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Xbox_app_logo.svg/2048px-Xbox_app_logo.svg.png',
+      'https://media.tycsports.com/files/2023/05/02/563077/super-mario-bros_862x485.webp?v=4',
     imageAlt:
       'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
     href: '#',
   },
   {
-    name: 'Videogames',
+    name: 'The Last of Us',
     description: 'Work was done on the economic flow of the video game',
-    imageSrc: 'https://xgp.pl/wp-content/uploads/2022/08/sony-playstation.jpg',
+    imageSrc:
+      'https://hips.hearstapps.com/hmg-prod/images/index-tlou-multi-64146d502ccbc.jpg?crop=0.888888888888889xw:1xh;center,top',
     imageAlt:
       'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
     href: '#',
   },
   {
-    name: 'Videogames',
+    name: 'Sonic',
     description: 'Work was done on the economic flow of the video game',
-    imageSrc:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Nintendo_Switch_logo%2C_square.png/768px-Nintendo_Switch_logo%2C_square.png',
+    imageSrc: 'https://i.ytimg.com/vi/X0k6OvkELZw/maxresdefault.jpg',
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     href: '#',
   },
