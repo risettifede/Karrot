@@ -104,7 +104,7 @@ const Form = () => {
               src={Logo}
               alt='Your Company'
             />
-            <h2 className='mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900'>
+            <h2 className='mt-10 uppercase text-center text-2xl font-bold leading-9 tracking-tight text-white'>
               Contact us
             </h2>
           </div>
@@ -114,7 +114,7 @@ const Form = () => {
               <div>
                 <label
                   htmlFor='name'
-                  className='block text-sm font-medium leading-6 text-gray-900'
+                  className='block font-mont text-sm font-medium leading-6 text-gray-900'
                 >
                   Your name
                 </label>
@@ -134,7 +134,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='Email'
-                    className='block text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
                   >
                     Email address
                   </label>
@@ -154,7 +154,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='Subjet'
-                    className='block text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
                   >
                     Subjet
                   </label>
@@ -174,7 +174,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='messagge'
-                    className='block text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
                   >
                     Your messagge
                   </label>
@@ -187,15 +187,15 @@ const Form = () => {
                     required
                     maxLength='1000'
                     // placeholder='Escribe tu consulta aquí...'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block font-mont w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
                   />
                 </div>
               </div>
 
-              <div>
+              <div className='flex justify-center mt-6'>
                 <button
                   type='submit'
-                  className='flex w-1/2 justify-center uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  className='uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 >
                   Submit
                 </button>

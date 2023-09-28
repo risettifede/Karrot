@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
   -webkit-font-smoothing: antialiased;
@@ -8,18 +8,34 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.no-scroll-x {
+body {
   overflow-x: hidden;
 }
 
-.no-scroll-y {
-  overflow-y: hidden;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-body {
-  font-family: 'Press Start 2P', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
 
 button {
   border-radius: 8px;

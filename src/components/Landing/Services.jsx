@@ -1,26 +1,30 @@
 const Services = () => {
   return (
-    <div className='bg-white py-20 mt-10'>
+    <div className='py-20 mt-10 xxxl:p-28 xxxl:mt-2'>
       <div className='mx-auto max-w-7xl px-12'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div
+          className='grid grid-cols-1 gap-4 
+        lg:grid-cols-2
+        xxxl:grid-cols-2  
+        xxxl:gap-12'
+        >
           <div
             className='rounded-xl bg-pink py-10 text-center shadow-xl
-          xl:-px-1
+          
           '
           >
             <div
               className='mx-auto max-w-xs px-8
-            lg:px-5
-            
-             bg-red-400
-            '
+            lg:px-5'
             >
-              <p className='font-bold text-xl mx-auto'>DISCOVERY AND SCOPING</p>
+              <p className='font-bold text-xl mx-auto text-violet'>
+                DISCOVERY AND SCOPING
+              </p>
               <p
-                className='mt-2 text-[13px] leading-5 
+                className='mt-6  text-[13px] leading-5 font-mont
               lg:text-[15px]
               xl:text-[17px]
-              xxl:text-[20px] 
+              xxl:text-[17px] 
               '
               >
                 We define and understand the flow of the whole ecosystem,
@@ -34,9 +38,9 @@ const Services = () => {
           </div>
           <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
-              <p className='font-bold text-xl mx-auto'>MATH</p>
+              <p className='font-bold text-xl mx-auto text-violet'>MATH</p>
               <p
-                className='mt-6 text-[13px] leading-5  lg:text-[15px]
+                className='mt-6 font-mont text-[13px] leading-5 lg:text-[15px]
               xl:text-[17px]'
               >
                 We develop the whole system mathematically and put numbers to
@@ -49,9 +53,11 @@ const Services = () => {
           </div>
           <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
-              <p className='font-bold  text-xl mx-auto'>DIFFICULTY</p>
+              <p className='font-bold  text-xl mx-auto text-violet'>
+                DIFFICULTY
+              </p>
               <p
-                className='mt-6 text-[13px] leading-5 lg:text-[15px]
+                className='mt-6 font-mont text-[13px] leading-5 lg:text-[15px]
               xl:text-[17px]'
               >
                 We define probabilities and &quot;difficulty&quot; of the game
@@ -64,9 +70,9 @@ const Services = () => {
           </div>
           <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
             <div className='mx-auto max-w-xs px-8'>
-              <p className='font-bold text-xl mx-auto'>BALANCING</p>
+              <p className='font-bold text-xl mx-auto text-violet'>BALANCING</p>
               <p
-                className='mt-6 text-[13px] leading-5 lg:text-[15px]
+                className='mt-6 font-mont text-[13px] leading-5 lg:text-[15px]
               xl:text-[17px]'
               >
                 We test the mathematics and incentives to ensure they are in

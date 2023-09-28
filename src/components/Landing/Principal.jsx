@@ -31,7 +31,7 @@ const Main = () => {
       </header>
 
       {/* Main Content */}
-      <main className='text-white text-center text-md space-y-4 p-5'>
+      <main className='text-white text-center text-md space-y-4 p-5 font-mont'>
         <p
           className='-mt-12
         md:text-xl 
@@ -54,14 +54,14 @@ const Main = () => {
       '
       >
         <button
-          className='bg-bubble shadow-xl text-white text-lg px-4 py-2 
+          className='bg-bubble shadow-xl font-mont text-white text-lg px-4 py-2 
         md:text-xl md:px-8 md:py-3 
         lg:hidden'
         >
           LET’S TALK
         </button>
         <button
-          className='bg-bubble mx-auto shadow-xl text-white px-4 py-2 hidden 
+          className='bg-bubble font-mont mx-auto shadow-xl text-white px-4 py-2 hidden 
         lg:block lg:px-6 lg:py-2 lg:text-xl
         '
         >

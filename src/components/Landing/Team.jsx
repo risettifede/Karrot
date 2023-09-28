@@ -33,17 +33,17 @@ export default function Team() {
     <div className='flex flex-wrap py-24 -mt-12'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='max-w-2xl mb-12'>
-          <h2 className='text-2xl uppercase tracking-tight text-center justify-center -mt-20 xxxxl:ml-64'>
+          <h2 className='text-2xl uppercase text-celeste tracking-tight text-center justify-center -mt-20 xxxxl:ml-64'>
             Team
           </h2>
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 align-center gap-12'>
+        <div className='grid grid-cols-1 xxl:grid-cols-4 align-center gap-12'>
           {founders.map((person) => (
             <div
               key={person.name}
-              className='card bg-white p-12 rounded-xl shadow-lg ring-1 ring-inset ring-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center'
+              className='card font-mont bg-white p-12 rounded-xl shadow-lg ring-1 ring-inset ring-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center'
             >
               <img
                 className='h-32 w-32 mb-4 rounded-full object-cover transform translate-y-1'
