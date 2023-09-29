@@ -16,7 +16,7 @@ const About = () => {
 
       {/* Main content */}
       <div className='flex flex-col items-center justify-center bg-celeste rounded-xl shadow-2xl p-8 w-3/4 mx-auto z-0'>
-        <h2 className='text-xl text-white md:text-2xl lg:text-3xl xl:text-4xl xxxl:text-3xl'>
+        <h2 className='text-xl text-white md:text-2xl lg:text-3xl xl:text-4xl xxxl:text-2xl'>
           OUR VISION
         </h2>
 

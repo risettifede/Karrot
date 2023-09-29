@@ -1,6 +1,6 @@
 import NavBar from '../components/NavBar';
 import About from '../components/Landing/About';
-import Main from '../components/Landing/Principal';
+import Main from '../components/Landing/Main';
 import Form from '../components/Landing/Form';
 import Team from '../components/Landing/Team';
 import Clients from '../components/Landing/Clients';
