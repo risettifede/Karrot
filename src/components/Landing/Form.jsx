@@ -104,17 +104,17 @@ const Form = () => {
               src={Logo}
               alt='Your Company'
             /> */}
-            <h2 className='mt-10 uppercase text-center text-2xl font-bold leading-9 tracking-tight text-white'>
+            <h2 className='mt-10 uppercase text-center text-2xl leading-9 tracking-tight text-white'>
               Contact us
             </h2>
           </div>
 
-          <div className='mt-10 '>
+          <div className='mt-10 uppercase '>
             <form className='space-y-6' action='#' method='POST'>
               <div>
                 <label
                   htmlFor='name'
-                  className='block font-mont text-sm font-medium leading-6 text-gray-900'
+                  className='block font-mont text-sm leading-6 text-white font-extrabold'
                 >
                   Your name
                 </label>
@@ -131,10 +131,10 @@ const Form = () => {
               </div>
 
               <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex uppercase items-center justify-between'>
                   <label
                     htmlFor='Email'
-                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm leading-6 text-white font-extrabold'
                   >
                     Email address
                   </label>
@@ -154,7 +154,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='Subjet'
-                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm leading-6 text-white font-extrabold'
                   >
                     Subjet
                   </label>
@@ -174,7 +174,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='messagge'
-                    className='block font-mont text-sm font-medium leading-6 text-gray-900'
+                    className='block font-mont text-sm leading-6 text-white font-extrabold'
                   >
                     Your messagge
                   </label>

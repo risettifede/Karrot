@@ -31,14 +31,14 @@ const Main = () => {
       </header>
 
       {/* Main Content */}
-      <main className='text-white text-center text-md space-y-4 p-5 font-mont'>
+      <main className='text-violet text-center text-md space-y-4 p-5 font-mont font-extrabold'>
         <p
           className='-mt-12
         md:text-xl 
         lg:text-2xl lg:mt-10 
         xl:text-2xl xl:-mt-12
         xxl:text-2xl xxl:-mt-12
-        xxxl:text-xl xxxl:mt-10'
+        xxxl:text-xl xxxl:mt-10 xxxl:text-bold'
         >
           Welcome to Karrot, where we use our expertise in gaming and finance to
           help games and web 3 projects create sustainable and profitable

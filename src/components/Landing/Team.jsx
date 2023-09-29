@@ -28,12 +28,12 @@ const founders = [
   },
 ];
 
-export default function Team() {
+const Team = () => {
   return (
-    <div className='flex flex-wrap py-24 -mt-12'>
+    <div className='flex flex-wrap py-24 -mt-12 items-center justify-center'>
       <div className='mx-auto max-w-7xl px-6'>
-        <div className='max-w-2xl mb-12'>
-          <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-20 xxxxl:ml-[570px]'>
+        <div className='max-w-2xl mb-12 flex flex-col items-center'>
+          <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-10 xxxxl:ml-[570px]'>
             Team
           </h2>
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
@@ -76,4 +76,6 @@ export default function Team() {
       </div>
     </div>
   );
-}
+};
+
+export default Team;

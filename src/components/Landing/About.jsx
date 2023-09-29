@@ -5,7 +5,7 @@ const About = () => {
     <div className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2'>
       {/* Header - About */}
       <h1
-        className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-4 
+        className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 
       md:text-4xl 
       lg:text-5xl lg:mt-10
       xl:text-5xl xl:mt-12
