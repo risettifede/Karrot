@@ -1,4 +1,5 @@
 import Nintendo from '../../assets/Resources/nintendo.png';
+import Arrow from '../../assets/Resources/Arrow.png';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       </h1>
 
       {/* Main content */}
-      <div className='flex flex-col items-center justify-center bg-celeste rounded-xl shadow-2xl p-8 w-3/4 mx-auto z-0'>
+      <div className='flex flex-col items-center justify-center bg-celeste rounded-xl shadow-2xl p-8 w-3/4 mx-auto z-0 relative'>
         <h2 className='text-xl text-white md:text-2xl lg:text-3xl xl:text-4xl xxxl:text-2xl'>
           OUR VISION
         </h2>
@@ -28,6 +29,12 @@ const About = () => {
           leading game economy design company, setting the standard for
           innovative and ethical practices in the industry.
         </p>
+        <img
+          className='hidden xxxl:block absolute top-[81%] left-[89%] w-[60px]
+          xxxxl:top-[90%] xxxxl:left-[93%]'
+          src={Arrow}
+          alt='Descripción de tu imagen'
+        />
 
         <img
           className='mt-4 h-[100px] lg:h-32 xl:h-36 xxl:h-36 xxxl:hidden'
@@ -40,9 +47,6 @@ const About = () => {
         src={Nintendo}
         alt='Nintendo'
       />
-
-      {/* Potential additional content or padding */}
-      <div></div>
     </div>
   );
 };

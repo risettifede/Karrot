@@ -38,7 +38,7 @@ const Main = () => {
         lg:text-2xl lg:mt-10 
         xl:text-2xl xl:-mt-12
         xxl:text-2xl xxl:-mt-12
-        xxxl:text-xl xxxl:mt-10 xxxl:text-bold'
+        xxxl:text-xl xxxl:mt-10 xxxl:text-bold xxxl:w-[900px]'
         >
           Welcome to Karrot, where we use our expertise in gaming and finance to
           help games and web 3 projects create sustainable and profitable
@@ -74,8 +74,7 @@ const Main = () => {
           md:h-48 md:py-6 
           lg:h-64 
           xl:h-40 xl:mr-[990px]
-          xxl:mr-[1100px] xxl:-mt-2
-          xxxl:mr-[1300px] xxxl:-mt-6
+          xxxl:mr-[90%] xxxl:-mt-[4%]
           '
         src={Logo}
         alt='Conejo de Karrot'
