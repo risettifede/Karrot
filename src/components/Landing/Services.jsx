@@ -12,12 +12,14 @@ const Services = () => {
         >
           Services
         </h2>
-        <div className='mx-auto max-w-7xl px-12'>
+        <div
+          className='mx-auto max-w-7xl px-12
+        xxxl:max-w-4xl xxxl:max-h-5xl'
+        >
           <div
             className='grid grid-cols-1 gap-4 
         lg:grid-cols-2
-        xxxl:grid-cols-2  
-        xxxl:gap-12'
+        xxxl:grid-cols-2 xxxl:gap-12'
           >
             <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
               <div className='mx-auto px-8 lg:px-5'>
@@ -26,9 +28,9 @@ const Services = () => {
                 </p>
                 <p
                   className='mt-6 font-bold text-white text-[13px] leading-5 font-mont
-              lg:text-[15px]
+              lg:text-[13px]
               xl:text-[17px]
-              xxl:text-[17px]'
+              xxl:text-[14px]'
                 >
                   We define and understand the flow of the whole ecosystem,
                   including how users earn points, coins, NFTs, and tokens. We
@@ -43,8 +45,8 @@ const Services = () => {
               <div className='mx-auto max-w-md px-8'>
                 <p className='font-bold text-xl mx-auto text-white'>MATH</p>
                 <p
-                  className='mt-6 font-mont font-bold text-white text-[13px] leading-5 lg:text-[15px]
-              xl:text-[17px]'
+                  className='mt-6 font-mont font-bold text-white text-[13px] leading-5 lg:text-[13px]
+              xl:text-[14px]'
                 >
                   We develop the whole system mathematically and put numbers to
                   all the dynamics of the game. We determine the probabilities
@@ -60,8 +62,8 @@ const Services = () => {
                   DIFFICULTY
                 </p>
                 <p
-                  className='mt-6 font-bold text-white font-mont text-[13px] leading-5 lg:text-[15px]
-              xl:text-[17px]'
+                  className='mt-6 font-bold text-white font-mont text-[13px] leading-5 lg:text-[13px]
+              xl:text-[14px]'
                 >
                   We define probabilities and &quot;difficulty&quot; of the game
                   project. For example, we determine how often we want a user to
@@ -78,7 +80,7 @@ const Services = () => {
                 </p>
                 <p
                   className='mt-6 font-bold text-white font-mont text-[13px] leading-5 lg:text-[15px]
-              xl:text-[17px]'
+              xl:text-[13px]'
                 >
                   We test the mathematics and incentives to ensure they are in
                   line with what we want the users to do. Although the

@@ -33,7 +33,7 @@ const Team = () => {
     <div className='flex flex-wrap py-24 -mt-12 items-center justify-center'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='max-w-2xl mt-10 mb-4 flex flex-col items-center'>
-          <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-10 xxxxl:ml-[570px]'>
+          <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-10 xxxxl:ml-[82%] xxxl:ml-[82%]'>
             Team
           </h2>
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
