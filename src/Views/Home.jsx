@@ -6,6 +6,7 @@ import Team from '../components/Landing/Team';
 import Clients from '../components/Landing/Clients';
 import Services from '../components/Landing/Services';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/Landing/WhatsAppButton';
 
 const Home = () => {
   return (
@@ -48,6 +49,11 @@ const Home = () => {
       {/* Footer section */}
       <section className='w-screen'>
         <Footer />
+      </section>
+
+      {/* Footer section */}
+      <section className='App'>
+        <WhatsAppButton />
       </section>
     </div>
   );

@@ -1,13 +1,14 @@
 const Services = () => {
   return (
-    <div className='py-2 mt-2 xxxl:p-28 xxxl:mt-2'>
-      <div className='py-2 mb-2 xxxl:p-28 xxxl:mt-2'>
+    <div className='py-2 mt-2'>
+      <div className='py-2 mb-2 '>
         <h2
           className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 mb-4 
-      md:text-4xl 
-      lg:text-5xl lg:mt-10
-      xl:text-5xl xl:mt-12
-      xxxl:text-3xl'
+          md:text-4xl 
+          lg:text-3xl lg:mt-10 lg:mb-10
+          xl:text-5xl xl:mt-12
+          xxl:mt-10 xxl:mb-8
+          xxxl:text-3xl'
         >
           Services
         </h2>
@@ -20,7 +21,7 @@ const Services = () => {
           >
             <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
               <div className='mx-auto px-8 lg:px-5'>
-                <p className='font-bold text-xl mx-auto text-violet'>
+                <p className='font-bold text-xl mx-auto text-white'>
                   DISCOVERY AND SCOPING
                 </p>
                 <p
@@ -40,7 +41,7 @@ const Services = () => {
             </div>
             <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
               <div className='mx-auto max-w-md px-8'>
-                <p className='font-bold text-xl mx-auto text-violet'>MATH</p>
+                <p className='font-bold text-xl mx-auto text-white'>MATH</p>
                 <p
                   className='mt-6 font-mont font-bold text-white text-[13px] leading-5 lg:text-[15px]
               xl:text-[17px]'
@@ -55,7 +56,7 @@ const Services = () => {
             </div>
             <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
               <div className='mx-auto max-w-md px-8'>
-                <p className='font-bold  text-xl mx-auto text-violet'>
+                <p className='font-bold  text-xl mx-auto text-white'>
                   DIFFICULTY
                 </p>
                 <p
@@ -72,7 +73,7 @@ const Services = () => {
             </div>
             <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
               <div className='mx-auto max-w-md px-8'>
-                <p className='font-bold text-xl mx-auto text-violet'>
+                <p className='font-bold text-xl mx-auto text-white'>
                   BALANCING
                 </p>
                 <p

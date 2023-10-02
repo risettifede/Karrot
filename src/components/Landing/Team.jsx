@@ -32,7 +32,7 @@ const Team = () => {
   return (
     <div className='flex flex-wrap py-24 -mt-12 items-center justify-center'>
       <div className='mx-auto max-w-7xl px-6'>
-        <div className='max-w-2xl mb-12 flex flex-col items-center'>
+        <div className='max-w-2xl mt-10 mb-4 flex flex-col items-center'>
           <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-10 xxxxl:ml-[570px]'>
             Team
           </h2>
