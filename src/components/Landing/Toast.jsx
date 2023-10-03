@@ -7,7 +7,7 @@ const Toast = ({ message, type, onClose }) => {
       <div className='relative p-4 bg-white border border-gray-300 rounded shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 z-50'>
         <button
           type='button'
-          className='absolute -top-6 -right-10 text-5xl focus:outline-none'
+          className='absolute -top-1 right-4 text-5xl focus:outline-none'
           onClick={onClose}
         >
           &times;
