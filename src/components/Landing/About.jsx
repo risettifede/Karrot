@@ -3,7 +3,10 @@ import Arrow from '../../assets/Resources/Arrow.png';
 
 const About = () => {
   return (
-    <div className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2'>
+    <div
+      id='about'
+      className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2'
+    >
       {/* Header - About */}
       <h1
         className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 

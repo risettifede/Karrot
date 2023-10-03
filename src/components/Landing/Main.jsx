@@ -62,7 +62,7 @@ const Main = () => {
           LET`S TALK
         </a>
         <a
-          href='#formulario'
+          href='#about'
           className='bg-bubble mx-auto shadow-xl text-white px-4 py-2 hidden 
     lg:block lg:px-6 lg:py-2 lg:text-sm xl:hover:shadow-xl xl:hover:scale-105 xl:transition-all xl:duration-300 scroll-smooth'
         >

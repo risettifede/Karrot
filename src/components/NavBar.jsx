@@ -21,16 +21,14 @@ const NavBar = () => {
         </div>
 
         <div className='font-press'>
-          <Link>
-            <div
-              href='#formulario'
-              className='cursor-pointer border-none bg-bubble shadow-xl text-white duration-300 ease-in-out border px-4 py-3.5 rounded-md 
+          <a
+            href='#formulario'
+            className='cursor-pointer border-none bg-bubble shadow-xl text-white duration-300 ease-in-out border px-4 py-3.5 rounded-md 
               lg:px-2
               xl:text-sm xl:hover:scale-105 xl:transition-transform xl:mr-20'
-            >
-              LETS TALK
-            </div>
-          </Link>
+          >
+            LET`S TALK
+          </a>
         </div>
       </div>
     </nav>
