@@ -55,7 +55,7 @@ const Form = () => {
                   htmlFor='name'
                   className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                 >
-                  Your name
+                  name
                 </label>
                 <div className='mt-2'>
                   <input
@@ -63,8 +63,9 @@ const Form = () => {
                     id='name'
                     type='text'
                     autoComplete='name'
-                    className='block w-full font-mont padding-left rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray sm:text-sm sm:leading-6'
+                    className='block w-full font-mont p-1 rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray sm:text-sm sm:leading-6'
                   />
+
                   {errors.user_name && (
                     <span className='text-red-500 font-mont'>
                       This field is required
@@ -79,7 +80,7 @@ const Form = () => {
                     htmlFor='Email'
                     className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                   >
-                    Email address
+                    E-mail
                   </label>
                 </div>
                 <div className='mt-2'>
@@ -91,7 +92,7 @@ const Form = () => {
                     id='Email'
                     type='email'
                     autoComplete='Email'
-                    className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
+                    className='block w-full font-mont p-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
                   {errors.user_email && (
                     <span className='text-red-500 font-mont '>
@@ -116,7 +117,7 @@ const Form = () => {
                     id='Subject'
                     type='text'
                     autoComplete='Subject'
-                    className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
+                    className='block w-full font-mont p-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
                   {errors.Subject && (
                     <span className='text-red-500 font-mont'>
@@ -132,7 +133,7 @@ const Form = () => {
                     htmlFor='message'
                     className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                   >
-                    Your message
+                    message
                   </label>
                 </div>
                 <div className='mt-2'>
@@ -143,7 +144,7 @@ const Form = () => {
                     })}
                     id='message'
                     rows='4'
-                    className='block font-mont w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6'
+                    className='block font-mont w-full p-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6'
                   />
                   {errors.message && (
                     <span className='text-red-500 font-mont'>

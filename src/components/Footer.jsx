@@ -21,15 +21,15 @@ const Footer = () => {
           </div>
 
           <div className='space-x-4'>
-            <a href='#' target='_blank' rel='noopener noreferrer'>
+            {/* <a href='#' target='_blank' rel='noopener noreferrer'>
               <FaInstagram className='inline-block text-2xl hover:text-gray-400 transition ease-in-out duration-300' />
-            </a>
+            </a> */}
             <a href='#' target='_blank' rel='noopener noreferrer'>
               <FaLinkedin className='inline-block text-2xl hover:text-gray-400 transition ease-in-out duration-300' />
             </a>
-            <a href='#' target='_blank' rel='noopener noreferrer'>
+            {/* <a href='#' target='_blank' rel='noopener noreferrer'>
               <FaTwitter className='inline-block text-2xl hover:text-gray-400 transition ease-in-out duration-300' />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
