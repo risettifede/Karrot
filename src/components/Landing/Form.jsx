@@ -1,12 +1,19 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Toast from './Toast';
+import Spinner from './Spinner';
 
 const Form = () => {
   const form = useRef();
-  const [toast, setToast] = useState({ visible: false, message: '', type: '' });
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastType, setToastType] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = async (e) => {
     e.preventDefault();
+
+    setIsLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -16,22 +23,15 @@ const Form = () => {
         'lzxTgk2DmiNxY5ObE'
       );
 
-      setToast({
-        visible: true,
-        message: 'Email sent successfully!',
-        type: 'success',
-      });
+      setToastMessage('Email sent successfully!');
+      setToastType('success');
     } catch (error) {
-      setToast({
-        visible: true,
-        message: 'Error sending email.',
-        type: 'error',
-      });
+      setToastMessage('Error sending email. Please try again later.');
+      setToastType('error');
+    } finally {
+      setShowToast(true);
+      setIsLoading(false);
     }
-  };
-
-  const closeToast = () => {
-    setToast({ ...toast, visible: false });
   };
 
   return (
@@ -137,28 +137,25 @@ const Form = () => {
                 <button
                   type='submit'
                   value='Send'
-                  className='uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 '
+                  className='uppercase rounded-md bg-bubble px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2'
+                  style={{ width: 'max-content' }}
                 >
-                  Submit
+                  {isLoading && <Spinner />}
+                  <span
+                    className={`transition-opacity duration-300 ${
+                      isLoading ? 'opacity-0' : 'opacity-100'
+                    }`}
+                  >
+                    Submit
+                  </span>
                 </button>
               </div>
-              {toast.visible && (
-                <div className='fixed inset-0 flex items-center justify-center z-50'>
-                  <div className='absolute inset-0 bg-black opacity-60 blur-md'></div>
-                  <div
-                    className={`p-4 bg-${
-                      toast.type === 'success' ? 'green' : 'red'
-                    }-500 rounded shadow-lg text-white relative w-1/3`}
-                  >
-                    {toast.type === 'success' ? '✔' : '❌'} {toast.message}
-                    <button
-                      className='absolute top-2 right-2 text-xl'
-                      onClick={closeToast}
-                    >
-                      &times;
-                    </button>
-                  </div>
-                </div>
+              {showToast && (
+                <Toast
+                  message={toastMessage}
+                  type={toastType}
+                  onClose={() => setShowToast(false)}
+                />
               )}
             </form>
           </div>

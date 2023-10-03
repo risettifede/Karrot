@@ -6,7 +6,7 @@ import Team from '../components/Landing/Team';
 import Clients from '../components/Landing/Clients';
 import Services from '../components/Landing/Services';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/Landing/WhatsAppButton';
+// import WhatsAppButton from '../components/Landing/WhatsAppButton';
 
 const Home = () => {
   return (
@@ -52,9 +52,9 @@ const Home = () => {
       </section>
 
       {/* Footer section */}
-      <section className='App'>
+      {/* <section className='App'>
         <WhatsAppButton />
-      </section>
+      </section> */}
     </div>
   );
 };
