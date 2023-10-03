@@ -1,6 +1,19 @@
+// import Square from '../../assets/Resources/Equis.png';
+
 const Services = () => {
   return (
-    <div className='py-2 mt-2'>
+    <div className='py-2 mt-2 relative'>
+      {/* <img
+        src={Square}
+        alt='Descripción de la imagen'
+        className='
+              w-[40%] h-[9%] mt-[185%] mb-20 -rotate-90 bg-red-500 mx-auto absolute z-0
+              md:w-[150px] md:h-[150px]
+              lg:w-[200px] lg:h-[200px] lg:ml-4
+              xxl:w-[250px] xxl:h-[250px] xxl:ml-[300px]
+              xxxl:w-[300px] xxxl:h-[300px] xxxl:ml-[400px]
+            '
+      /> */}
       <div className='py-2 mb-2 '>
         <h2
           className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 mb-4 
@@ -17,11 +30,11 @@ const Services = () => {
         xxxl:max-w-4xl xxxl:max-h-5xl'
         >
           <div
-            className='grid grid-cols-1 gap-4 
+            className='relative grid grid-cols-1 gap-4 z-10
         lg:grid-cols-2
         xxxl:grid-cols-2 xxxl:gap-12'
           >
-            <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
+            <div className='rounded-xl bg-pink py-10 text-center shadow-xl relative z-10'>
               <div className='mx-auto px-8 lg:px-5'>
                 <p className='font-bold text-xl mx-auto text-white'>
                   DISCOVERY AND SCOPING
@@ -41,7 +54,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
+            <div className='rounded-xl bg-pink py-10 text-center shadow-xl relative z-10'>
               <div className='mx-auto max-w-md px-8'>
                 <p className='font-bold text-xl mx-auto text-white'>MATH</p>
                 <p
@@ -56,7 +69,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
+            <div className='rounded-xl bg-pink py-10 text-center shadow-xl relative z-10'>
               <div className='mx-auto max-w-md px-8'>
                 <p className='font-bold  text-xl mx-auto text-white'>
                   DIFFICULTY
@@ -73,7 +86,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className='rounded-xl bg-pink py-10 text-center shadow-xl'>
+            <div className='rounded-xl bg-pink py-10 text-center shadow-xl relative z-10'>
               <div className='mx-auto max-w-md px-8'>
                 <p className='font-bold text-xl mx-auto text-white'>
                   BALANCING
