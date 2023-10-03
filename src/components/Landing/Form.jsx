@@ -1,25 +1,29 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Toast from './Toast';
 import Spinner from './Spinner';
+import { useForm } from 'react-hook-form';
 
 const Form = () => {
-  const form = useRef();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
   const [toastType, setToastType] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
-
+  const onSubmit = async (data) => {
     setIsLoading(true);
 
     try {
       await emailjs.sendForm(
         'service_c06utff',
         'template_4q86fqo',
-        form.current,
+        data,
         'lzxTgk2DmiNxY5ObE'
       );
 
@@ -44,30 +48,28 @@ const Form = () => {
             </h2>
           </div>
 
-          <div className='mt-10 uppercase '>
-            <form
-              className='space-y-6'
-              action='#'
-              method='POST'
-              ref={form}
-              onSubmit={sendEmail}
-            >
+          <div className='mt-10 '>
+            <form className='space-y-6' onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label
                   htmlFor='name'
-                  className='block font-mont text-sm leading-6 text-white font-extrabold'
+                  className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                 >
                   Your name
                 </label>
                 <div className='mt-2'>
                   <input
+                    {...register('user_name', { required: true })}
                     id='name'
                     type='text'
-                    name='user_name'
                     autoComplete='name'
-                    required
                     className='block w-full font-mont padding-left rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray sm:text-sm sm:leading-6'
                   />
+                  {errors.user_name && (
+                    <span className='text-red-500 font-mont'>
+                      This field is required
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -75,61 +77,80 @@ const Form = () => {
                 <div className='flex uppercase items-center justify-between'>
                   <label
                     htmlFor='Email'
-                    className='block font-mont text-sm leading-6 text-white font-extrabold'
+                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                   >
                     Email address
                   </label>
                 </div>
                 <div className='mt-2'>
                   <input
+                    {...register('user_email', {
+                      required: true,
+                      pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    })}
                     id='Email'
                     type='email'
-                    name='user_email'
                     autoComplete='Email'
-                    required
                     className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
+                  {errors.user_email && (
+                    <span className='text-red-500 font-mont '>
+                      Invalid email address
+                    </span>
+                  )}
                 </div>
               </div>
+
               <div>
                 <div className='flex items-center justify-between'>
                   <label
-                    htmlFor='Subjet'
-                    className='block font-mont text-sm leading-6 text-white font-extrabold'
+                    htmlFor='Subject'
+                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                   >
-                    Subjet
+                    Subject
                   </label>
                 </div>
                 <div className='mt-2'>
                   <input
-                    id='Subjet'
-                    name='Subjet'
-                    type='Subjet'
-                    autoComplete='Subjet'
-                    required
+                    {...register('Subject', { required: true })}
+                    id='Subject'
+                    type='text'
+                    autoComplete='Subject'
                     className='block w-full font-mont rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
                   />
+                  {errors.Subject && (
+                    <span className='text-red-500 font-mont'>
+                      This field is required
+                    </span>
+                  )}
                 </div>
               </div>
+
               <div>
                 <div className='flex items-center justify-between'>
                   <label
-                    htmlFor='messagge'
-                    className='block font-mont text-sm leading-6 text-white font-extrabold'
+                    htmlFor='message'
+                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
                   >
                     Your message
                   </label>
                 </div>
                 <div className='mt-2'>
                   <textarea
+                    {...register('message', {
+                      required: true,
+                      maxLength: 1000,
+                    })}
                     id='message'
-                    name='message'
                     rows='4'
-                    required
-                    maxLength='1000'
-                    // placeholder='Escribe tu consulta aquí...'
                     className='block font-mont w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6'
                   />
+                  {errors.message && (
+                    <span className='text-red-500 font-mont'>
+                      This field is required and should not exceed 1000
+                      characters
+                    </span>
+                  )}
                 </div>
               </div>
 
