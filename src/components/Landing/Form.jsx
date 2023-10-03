@@ -16,26 +16,29 @@ const Form = () => {
   const [toastType, setToastType] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data, e) => {
     setIsLoading(true);
 
     try {
       await emailjs.sendForm(
         'service_c06utff',
         'template_4q86fqo',
-        data,
+        e.target,
         'lzxTgk2DmiNxY5ObE'
       );
 
       setToastMessage('Email sent successfully!');
       setToastType('success');
     } catch (error) {
+      console.error('There was an error sending the email:', error);
       setToastMessage('Error sending email. Please try again later.');
       setToastType('error');
     } finally {
       setShowToast(true);
       setIsLoading(false);
     }
+
+    e.preventDefault(); // Para prevenir la recarga de la página
   };
 
   return (
