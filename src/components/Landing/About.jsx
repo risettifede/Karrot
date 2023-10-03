@@ -7,18 +7,15 @@ const About = () => {
       id='about'
       className='relative grid grid-rows-[auto,1fr,auto] gap-6 w-screen h-1/2'
     >
-      {/* Header - About */}
       <h1
         className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 
       md:text-4xl 
-      lg:text-5xl lg:mt-10
-      xl:text-5xl xl:mt-12
+      lg:text-3xl lg:mt-10
       xxxl:text-3xl'
       >
         About
       </h1>
 
-      {/* Main content */}
       <div className='flex flex-col items-center justify-center bg-celeste rounded-xl shadow-2xl p-8 w-3/4 mx-auto z-0 relative'>
         <h2 className='text-xl text-white md:text-2xl lg:text-3xl xl:text-4xl xxxl:text-2xl'>
           OUR VISION

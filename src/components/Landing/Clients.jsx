@@ -1,43 +1,37 @@
-import React from 'react';
+// import React from 'react';
 import { callouts } from '../Data/Clients';
 
 const Clients = () => {
   return (
-    <div className='-mt-20'>
-      <div className='mx-auto max-w-7xl mt-10 mb-4 px-4 sm:px-6 lg:px-8'>
+    <div className='-mt-20 lg:-mt-40'>
+      <div className='mx-auto max-w-7xl mt-10 mb-4 px-4 lg:px-8'>
         <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32'>
-          <h2 className='text-xl uppercase font-bold text-celeste text-center mb-20'>
+          <h2 className='text-xl uppercase font-bold text-celeste text-center mb-20 lg:text-2xl xxxl:text-3xl'>
             Our Clients
           </h2>
-          <div className='space-y-8 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
+
+          <div className='grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-2 gap-4 '>
             {callouts.map((callout) => (
               <div
                 key={callout.name}
-                className='group font-mont relative text-center '
+                className='font-mont border rounded overflow-hidden shadow-md bg-gray-100'
               >
                 <a
                   href={callout.href}
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <div className='relative h-48 w-full overflow-hidden rounded-lg transition duration-300 bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64'>
-                    <img
-                      src={callout.image}
-                      alt={callout.alt}
-                      className='h-full w-full object-cover object-center'
-                    />
-                  </div>
+                  <img
+                    className='w-full h-48 object-cover'
+                    src={callout.image}
+                    alt={callout.alt}
+                  />
                 </a>
-                <h3 className='mt-6 text-xl text-bold'>
-                  <a
-                    href={callout.href}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    {callout.name}
-                  </a>
-                </h3>
-                <p className='font-semibold'>{callout.description}</p>
+
+                <div className='p-4'>
+                  <h3 className='text-xl font-bold mb-2'>{callout.name}</h3>
+                  <p className='text-gray-700'>{callout.description}</p>
+                </div>
               </div>
             ))}
           </div>

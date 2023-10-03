@@ -3,17 +3,6 @@
 const Services = () => {
   return (
     <div className='py-2 mt-2 relative'>
-      {/* <img
-        src={Square}
-        alt='Descripción de la imagen'
-        className='
-              w-[40%] h-[9%] mt-[185%] mb-20 -rotate-90 bg-red-500 mx-auto absolute z-0
-              md:w-[150px] md:h-[150px]
-              lg:w-[200px] lg:h-[200px] lg:ml-4
-              xxl:w-[250px] xxl:h-[250px] xxl:ml-[300px]
-              xxxl:w-[300px] xxxl:h-[300px] xxxl:ml-[400px]
-            '
-      /> */}
       <div className='py-2 mb-2 '>
         <h2
           className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 mb-4 
