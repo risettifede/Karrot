@@ -50,11 +50,6 @@ const Home = () => {
       <section className='w-screen'>
         <Footer />
       </section>
-
-      {/* Footer section */}
-      {/* <section className='App'>
-        <WhatsAppButton />
-      </section> */}
     </div>
   );
 };

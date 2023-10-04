@@ -4,6 +4,8 @@ import German from '../../assets/Photos/GermanCapelletti.png';
 import Tomas from '../../assets/Photos/TomasFuld.png';
 import Thomas from '../../assets/Photos/ThomasBransburg.png';
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import equis from '../../assets/Resources/Equis.webp';
+import circle from '../../assets/Resources/Circle.webp';
 
 const founders = [
   {
@@ -30,8 +32,19 @@ const founders = [
 
 const Team = () => {
   return (
-    <div className='flex flex-wrap py-24 -mt-12 items-center justify-center'>
-      <div className='mx-auto max-w-7xl px-6'>
+    <div className='relative py-24 -mt-12 items-center justify-center'>
+      <img
+        src={equis}
+        alt='Background Image'
+        className='absolute h-56 rotate-10 top-[19%] left-[53%] object-cover z-0'
+      />
+      <img
+        src={circle}
+        alt='Background Image'
+        className='absolute h-56 rotate-10 top-[64%] -left-[9%] object-cover z-0'
+      />
+
+      <div className='mx-auto max-w-7xl px-6 z-10 relative'>
         <div className='max-w-2xl mt-10 mb-4 flex flex-col items-center'>
           <h2 className='text-2xl uppercase text-celeste tracking-tight -mt-10 xxxxl:ml-[82%] xxxl:ml-[82%] lg:text-3xl'>
             Team
@@ -43,7 +56,7 @@ const Team = () => {
           {founders.map((person) => (
             <div
               key={person.name}
-              className='card font-mont bg-white p-12 rounded-xl shadow-lg ring-1 ring-inset ring-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center'
+              className='card font-mont bg-white p-12 rounded-xl shadow-lg ring-1 ring-inset ring-gray-300 hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center'
             >
               <img
                 className='h-32 w-32 mb-4 rounded-full object-cover transform translate-y-1'
@@ -77,5 +90,4 @@ const Team = () => {
     </div>
   );
 };
-
 export default Team;

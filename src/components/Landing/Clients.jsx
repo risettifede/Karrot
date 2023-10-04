@@ -10,7 +10,7 @@ const Clients = () => {
             Our Clients
           </h2>
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-2 gap-4 '>
+          <div className='grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-2 gap-4 relative z-10 '>
             {callouts.map((callout) => (
               <div
                 key={callout.name}

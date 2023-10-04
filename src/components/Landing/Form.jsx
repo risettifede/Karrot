@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Toast from './Toast';
 import Spinner from './Spinner';
 import { useForm } from 'react-hook-form';
+import triangle from '../../assets/Resources/Triangle.webp';
 
 const Form = () => {
   const {
@@ -38,20 +39,25 @@ const Form = () => {
       setIsLoading(false);
     }
 
-    e.preventDefault(); // Para prevenir la recarga de la página
+    e.preventDefault();
   };
 
   return (
     <>
-      <div id='formulario' className='p-8 -mt-20'>
-        <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-10 mx-auto'>
+      <div id='formulario' className='relative p-8 -mt-4'>
+        <img
+          src={triangle}
+          alt='Background Image'
+          className='absolute h-[50%] rotate-12 -top-[20%] left-[20%] object-cover z-0'
+        />
+        <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-10 mx-auto relative z-10'>
           <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
             <h2 className='mt-10 uppercase text-center text-2xl leading-9 tracking-tight text-white'>
               Contact us
             </h2>
           </div>
 
-          <div className='mt-10 '>
+          <div className='mt-10'>
             <form className='space-y-6' onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label
