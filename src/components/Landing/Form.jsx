@@ -48,7 +48,8 @@ const Form = () => {
         <img
           src={triangle}
           alt='Background Image'
-          className='absolute h-[50%] rotate-12 -top-[20%] left-[20%] object-cover z-0'
+          className='absolute h-[50%] rotate-12 -top-[20%] left-[20%] object-cover z-0
+          lg:h-[39%] lg:rotate-90 lg:-top-[29%] lg:left-[63%]'
         />
         <div className='flex bg-pink rounded-xl shadow-xl min-h-full flex-1 flex-col justify-center px-6 py-10 mx-auto relative z-10'>
           <div className='sm:mx-auto sm:w-full sm:max-w-sm'>

@@ -36,12 +36,14 @@ const Team = () => {
       <img
         src={equis}
         alt='Background Image'
-        className='absolute h-56 rotate-10 top-[19%] left-[53%] object-cover z-0'
+        className='absolute h-56 rotate-10 top-[19%] left-[53%] object-cover z-0
+        lg:h-48 lg:top-[40%] lg:left-[76%]'
       />
       <img
         src={circle}
         alt='Background Image'
-        className='absolute h-56 rotate-10 top-[64%] -left-[9%] object-cover z-0'
+        className='absolute h-56 rotate-10 top-[64%] -left-[9%] object-cover z-0
+        lg:h-48 lg:rotate-10 lg:top-[83%] lg:-left-[1%]'
       />
 
       <div className='mx-auto max-w-7xl px-6 z-10 relative'>
@@ -52,7 +54,11 @@ const Team = () => {
           <p className='mt-6 text-lg leading-8 text-gray-600'></p>
         </div>
 
-        <div className='grid grid-cols-1 xxl:grid-cols-4 align-center gap-20'>
+        <div
+          className='grid grid-cols-1 xxl:grid-cols-4 align-center gap-12
+        lg:grid-cols-2
+        xxl:gap-12'
+        >
           {founders.map((person) => (
             <div
               key={person.name}
