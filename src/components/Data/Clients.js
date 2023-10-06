@@ -26,7 +26,7 @@ export const callouts = [
         href: 'https://play.google.com/store/apps/details?id=com.aconcaguagames.FulboGalaxy',
     },
     {
-        name: 'Alaska Gold Ruch',
+        name: 'Alaska Gold Rush',
         description: 'Alaska Gold Rush is the first WEB3 native game with an open world and exciting plot and adventures within the metaverse. Become one of the first daredevils who set out to Alaska to get riches while exploring the unexplored!',
         image: Alaska,
         alt: 'Collection of four insulated travel bottles on wooden shelf.',

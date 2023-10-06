@@ -10,11 +10,11 @@ const Clients = () => {
             Our Clients
           </h2>
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-2 gap-4 relative z-10 '>
+          <div className='grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-3 gap-4 relative z-10 '>
             {callouts.map((callout) => (
               <div
                 key={callout.name}
-                className='font-mont border rounded overflow-hidden shadow-md bg-gray-100'
+                className='font-mont border rounded overflow-hidden shadow-md bg-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300'
               >
                 <a
                   href={callout.href}
