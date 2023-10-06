@@ -37,13 +37,17 @@ const Team = () => {
         src={equis}
         alt='Background Image'
         className='absolute h-56 rotate-10 top-[19%] left-[53%] object-cover z-0
-        lg:h-48 lg:top-[40%] lg:left-[76%]'
+        lg:h-48 lg:top-[40%] lg:left-[76%]
+        xxxl:h-60 xxxl:top-[10%] xxxl:left-[72%]
+        xxxxl:h-60 xxxxl:top-[10%] xxxxl:left-[82%]'
       />
       <img
         src={circle}
         alt='Background Image'
         className='absolute h-56 rotate-10 top-[64%] -left-[9%] object-cover z-0
-        lg:h-48 lg:rotate-10 lg:top-[83%] lg:-left-[1%]'
+        lg:h-48 lg:rotate-10 lg:top-[83%] lg:-left-[1%]
+        xxxl:h-48 xxxl:rotate-10 xxxl:top-[76%] xxxl:left-[10%]
+        xxxxl:h-48 xxxxl:rotate-10 xxxxl:top-[76%] xxxxl:left-[1%]'
       />
 
       <div className='mx-auto max-w-7xl px-6 z-10 relative'>
