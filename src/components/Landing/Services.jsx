@@ -1,9 +1,14 @@
-// import Square from '../../assets/Resources/Equis.png';
+import Square from '../../assets/Resources/Square.webp';
 
 const Services = () => {
   return (
     <div className='py-2 mt-2 relative'>
-      <div className='py-2 mb-2 '>
+      <img
+        className='h-64 rotate-45 absolute top-[45%] left-[70px] transform -translate-x-1/2 z-0'
+        src={Square}
+        alt=''
+      />
+      <div className='py-2 mb-2'>
         <h2
           className='text-center text-celeste uppercase self-center text-2xl mx-auto mt-10 mb-4 
           md:text-4xl 
