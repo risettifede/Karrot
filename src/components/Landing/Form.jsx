@@ -22,7 +22,7 @@ const Form = () => {
 
     try {
       await emailjs.sendForm(
-        'service_c06utff',
+        'service_abcx758',
         'template_4q86fqo',
         e.target,
         'lzxTgk2DmiNxY5ObE'
