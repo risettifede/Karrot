@@ -3,7 +3,7 @@ import Jeremias from '../../assets/Photos/JeremiasCoppola.png';
 import German from '../../assets/Photos/GermanCapelletti.png';
 import Tomas from '../../assets/Photos/TomasFuld.png';
 import Thomas from '../../assets/Photos/ThomasBransburg.png';
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import equis from '../../assets/Resources/Equis.webp';
 import circle from '../../assets/Resources/Circle.webp';
 
@@ -12,21 +12,25 @@ const founders = [
     name: 'Jeremías Coppola',
     role: 'Co-founder',
     imageUrl: Jeremias,
+    linkedInUrl: 'https://www.linkedin.com/in/jeremiascoppola/',
   },
   {
     name: 'Germán Capelletti',
     role: 'Co-founder',
     imageUrl: German,
+    linkedInUrl: 'https://www.linkedin.com/in/german-cappelletti/',
   },
   {
     name: 'Thomas Bransburg',
     role: 'Co-founder',
     imageUrl: Thomas,
+    linkedInUrl: 'https://www.linkedin.com/in/thomas-bransburg/',
   },
   {
     name: 'Tomás Fuld',
     role: 'Co-founder',
     imageUrl: Tomas,
+    linkedInUrl: 'https://www.linkedin.com/in/tomas-andres-fuld-2bb00715b/',
   },
 ];
 
@@ -79,14 +83,12 @@ const Team = () => {
                 </h3>
                 <p className='text-md font-bold leading-6'>{person.role}</p>
                 <div className='flex mt-2 space-x-2 justify-center'>
-                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                  <a
+                    href={person.linkedInUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <FaLinkedin
-                      size={20}
-                      className='text-bubble hover:text-violet transition ease-in-out duration-300'
-                    />
-                  </a>
-                  <a href='#' target='_blank' rel='noopener noreferrer'>
-                    <FaTwitter
                       size={20}
                       className='text-bubble hover:text-violet transition ease-in-out duration-300'
                     />
