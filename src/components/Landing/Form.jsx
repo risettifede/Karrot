@@ -65,7 +65,7 @@ const Form = () => {
               <div>
                 <label
                   htmlFor='name'
-                  className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
+                  className='block text-xl leading-6 text-white uppercase font-press'
                 >
                   name
                 </label>
@@ -90,7 +90,7 @@ const Form = () => {
                 <div className='flex uppercase items-center justify-between'>
                   <label
                     htmlFor='Email'
-                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
+                    className='block font-press text-xl leading-6 text-white uppercase'
                   >
                     E-mail
                   </label>
@@ -118,7 +118,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='Subject'
-                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
+                    className='block font-press text-xl leading-6 text-white uppercase'
                   >
                     Subject
                   </label>
@@ -143,7 +143,7 @@ const Form = () => {
                 <div className='flex items-center justify-between'>
                   <label
                     htmlFor='message'
-                    className='block font-mont text-xl leading-6 text-white uppercase font-extrabold'
+                    className='block font-press text-xl leading-6 text-white uppercase'
                   >
                     message
                   </label>
