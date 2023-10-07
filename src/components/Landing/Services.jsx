@@ -2,7 +2,7 @@ import Square from '../../assets/Resources/Square.webp';
 
 const Services = () => {
   return (
-    <div className='py-2 mt-2 relative'>
+    <div id='services' className='py-2 mt-2 relative'>
       <img
         className='h-64 rotate-45 absolute top-[45%] left-[70px] transform -translate-x-1/2 z-0'
         src={Square}

@@ -36,7 +36,10 @@ const founders = [
 
 const Team = () => {
   return (
-    <div className='relative py-24 -mt-12 items-center justify-center'>
+    <div
+      id='team'
+      className='relative py-24 -mt-12 items-center justify-center'
+    >
       <img
         src={equis}
         alt='Background Image'

@@ -1,21 +1,26 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className='w-screen shadow-lg hidden lg:block absolute top-0 bg-white z-30'>
       <div className='flex justify-between h-24 items-center px-10 xl:px-8'>
         <div className='flex space-x-8 '>
-          {['ABOUT', 'SERVICES', 'TEAM', 'CLIENTS'].map((item, index) => (
+          {[
+            { name: 'ABOUT', href: '#about' },
+            { name: 'SERVICES', href: '#services' },
+            { name: 'TEAM', href: '#team' },
+            { name: 'CLIENTS', href: '#clients' },
+          ].map((item, index) => (
             <div key={index} className='text-bubble xl:ml-10'>
-              <Link>
+              <a href={item.href}>
                 <div
                   className='cursor-pointer 
                 lg:text-sm lg:hover:scale-105 lg:transition-all lg:duration-300
                 xl:text-sm'
                 >
-                  {item}
+                  {item.name}
                 </div>
-              </Link>
+              </a>
             </div>
           ))}
         </div>
