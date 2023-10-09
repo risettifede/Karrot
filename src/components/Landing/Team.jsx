@@ -15,7 +15,7 @@ const founders = [
     linkedInUrl: 'https://www.linkedin.com/in/jeremiascoppola/',
   },
   {
-    name: 'Germán Capelletti',
+    name: 'Germán Cappelletti',
     role: 'Co-founder',
     imageUrl: German,
     linkedInUrl: 'https://www.linkedin.com/in/german-cappelletti/',
